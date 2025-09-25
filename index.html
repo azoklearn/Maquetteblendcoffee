@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Coffee Nancy - Salon de Café Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Logo Blend Coffee Nancy">
+                <span>Blend Coffee Nancy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1920&h=1080&fit=crop&crop=center'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Blend Coffee</span>
+                <span class="title-line">Nancy</span>
+            </h1>
+            <p class="hero-subtitle">L'excellence du café dans une atmosphère chaleureuse</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Découvrir notre menu</a>
+                <a href="#contact" class="btn btn-secondary">Réserver une table</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Histoire</h2>
+                <p class="section-subtitle">Une passion pour l'art du café depuis toujours</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>L'Art du Café Authentique</h3>
+                    <p>Blend Coffee Nancy est bien plus qu'un simple salon de café. C'est un sanctuaire dédié à l'excellence du café, où chaque grain est sélectionné avec soin et chaque boisson préparée avec passion par nos baristas experts.</p>
+                    <p>Dans un cadre chaleureux et raffiné, nous créons une expérience sensorielle unique qui éveille vos papilles et réchauffe votre cœur. Chaque visite est un moment de détente et de découverte.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-coffee"></i>
+                            <h4>Café Premium</h4>
+                            <p>Grains sélectionnés et torréfiés artisanalement</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Atmosphère Chaleureuse</h4>
+                            <p>Un décor raffiné pour un moment de détente</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Service Personnalisé</h4>
+                            <p>Un accueil chaleureux et des conseils experts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop&crop=center" alt="Intérieur du salon de café">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Menu</h2>
+                <p class="section-subtitle">Des saveurs authentiques et des créations uniques</p>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="boissons">Boissons</button>
+                <button class="category-btn" data-category="pâtisseries">Pâtisseries</button>
+                <button class="category-btn" data-category="plats">Plats Légers</button>
+            </div>
+            <div class="menu-items">
+                <div class="menu-category" id="boissons">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Espresso Artisanal</h4>
+                            <p>Un espresso intense et équilibré, torréfié à la perfection</p>
+                        </div>
+                        <span class="price">3.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Cappuccino Créatif</h4>
+                            <p>Cappuccino avec latte art personnalisé selon vos envies</p>
+                        </div>
+                        <span class="price">4.20€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Cold Brew Signature</h4>
+                            <p>Notre cold brew maison infusé pendant 18 heures</p>
+                        </div>
+                        <span class="price">4.80€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Matcha Latte</h4>
+                            <p>Matcha premium japonais avec lait d'amande bio</p>
+                        </div>
+                        <span class="price">5.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Chocolat Chaud Viennois</h4>
+                            <p>Chocolat noir belge avec chantilly maison</p>
+                        </div>
+                        <span class="price">5.20€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Thé Premium</h4>
+                            <p>Sélection de thés rares du monde entier</p>
+                        </div>
+                        <span class="price">4.50€</span>
+                    </div>
+                </div>
+                <div class="menu-category" id="pâtisseries" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Croissant Artisanal</h4>
+                            <p>Croissant au beurre AOP, fait maison quotidiennement</p>
+                        </div>
+                        <span class="price">2.80€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Tarte au Citron Meringuée</h4>
+                            <p>Tarte acidulée avec meringue italienne parfaite</p>
+                        </div>
+                        <span class="price">6.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Brownie au Chocolat Noir</h4>
+                            <p>Brownie fondant avec éclats de chocolat 70% cacao</p>
+                        </div>
+                        <span class="price">4.90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Macarons Maison</h4>
+                            <p>Sélection de 6 macarons aux saveurs saisonnières</p>
+                        </div>
+                        <span class="price">8.90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Cheesecake aux Fruits</h4>
+                            <p>Cheesecake crémeux avec coulis de fruits frais</p>
+                        </div>
+                        <span class="price">7.50€</span>
+                    </div>
+                </div>
+                <div class="menu-category" id="plats" style="display: none;">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Avocado Toast</h4>
+                            <p>Pain complet, avocat, tomates cerises, graines de chia</p>
+                        </div>
+                        <span class="price">8.90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Salade Quinoa</h4>
+                            <p>Quinoa, légumes de saison, feta, vinaigrette citronnée</p>
+                        </div>
+                        <span class="price">12.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Bagel Saumon</h4>
+                            <p>Bagel frais, saumon fumé, crème cheese, câpres</p>
+                        </div>
+                        <span class="price">11.90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Club Sandwich</h4>
+                            <p>Pain de mie, poulet, bacon, tomate, laitue, sauce spéciale</p>
+                        </div>
+                        <span class="price">13.50€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Soupe du Jour</h4>
+                            <p>Soupe maison avec pain artisanal et beurre</p>
+                        </div>
+                        <span class="price">7.90€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Univers</h2>
+                <p class="section-subtitle">Découvrez l'atmosphère unique de notre salon de café</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop&crop=center" alt="Café artisanal">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=600&fit=crop&crop=center" alt="Latte art">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=600&fit=crop&crop=center" alt="Intérieur élégant">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop&crop=center" alt="Pâtisseries">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=400&h=300&fit=crop&crop=center" alt="Café blanc élégant">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop&crop=center" alt="Atmosphère chaleureuse">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nous Contacter</h2>
+                <p class="section-subtitle">Venez nous rendre visite ou réservez votre table</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>123 Rue de la Gourmandise<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@blendcoffeenancy.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun - Ven: 7h00 - 19h00<br>Sam - Dim: 8h00 - 20h00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Logo Blend Coffee Nancy">
+                        <span>Blend Coffee Nancy</span>
+                    </div>
+                    <p>Un lieu unique dédié à l'excellence du café. Venez découvrir notre univers gourmand et raffiné dans une atmosphère chaleureuse et accueillante.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Inscrivez-vous pour recevoir nos actualités et offres spéciales.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blend Coffee Nancy. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
